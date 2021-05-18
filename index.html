@@ -16,6 +16,7 @@
                 <input type="text" v-model="textToSearch">
                 <button @click="doSearch">cerca</button>
             </div>
+
             <div>
                 <ul>
                     <li v-for="movie in moviesList" @click="getCast(movie)">
