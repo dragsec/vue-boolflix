@@ -6,6 +6,7 @@ new Vue({
         moviesList: [],
         tvSeriesList: [],
     },
+
     methods: {
         makeAxiosSearch(searchType){
             const axiosOptions = {
@@ -30,7 +31,7 @@ new Vue({
                     });
                 }
             });
-        }
+        },
 
         doSearch(){
             this.makeAxiosSearch("movie")
