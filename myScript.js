@@ -47,7 +47,7 @@ new Vue({
 
         getImgSrc(movie){
             if (movie.poster_path){
-                return 'https://image.tmdb.org/t/p/w154${movie.poster_path}';
+                return "https://image.tmdb.org/t/p/w154${movie.poster_path}";
             }else{
                 return "../assets/empty-image.jpg"
             }
