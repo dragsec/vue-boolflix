@@ -1,5 +1,5 @@
 new Vue({
-    el: "#app",
+    el: "#root",
     data: {
         tmdbApiKey: "0ab1e8bf1bb14d51b6ba7c8ff6e53732",
         textToSearch: "",
@@ -44,7 +44,7 @@ new Vue({
                 return movie.original_language;
             }
         },
-        
+
         getImgSrc(movie){
             if (movie.poster_path){
                 return 'https://image.tmdb.org/t/p/w154${movie.poster_path}';

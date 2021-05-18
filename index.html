@@ -18,8 +18,8 @@
             </div>
             <div>
                 <ul>
-                    <li v-for="movie in fullMoviesList" @click="getCast(movie)">
-                        <img src="getImgSrc(movie" alt="">
+                    <li v-for="movie in moviesList" @click="getCast(movie)">
+                        <img src="getImgSrc(movie)" alt="">
                         <p>{{movie.title}}</p>
                         <p>{{movie.original_title}}</p>
                     </li>
